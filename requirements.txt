@@ -1,0 +1,10 @@
+aiohttp==3.12.15
+feedparser==6.0.12
+tinydb==4.8.2
+fastapi==0.117.1
+uvicorn==0.37.0
+requests==2.32.5
+streamlit==1.50.0
+transformers==4.56.2
+torch==2.8.0
+beautifulsoup4==4.14.0
