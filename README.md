@@ -114,7 +114,7 @@ To run the web crawler / aggregator system, open three separate terminal windows
    ```
 3. Run the Streamlit dashboard to visualize results from a continuously updated DB
    ```
-   streamlit run ui\dashboard_simplified.py
+   streamlit run ui\simple_dashboard.py
    ```
 
 > Note: We currently limit each crawler to 25 items per crawl. Feel free to change the configs in `src/config.py` along other parameters.
