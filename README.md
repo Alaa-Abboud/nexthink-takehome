@@ -2,7 +2,7 @@
 
 ## System Diagram
 
-<img src="./media/system_diagram.png" alt="System Diagram" width="400">
+<img src="./media/system_diagram.png" alt="System Diagram">
 
 ## Refelctions
 
@@ -117,10 +117,12 @@ To run the web crawler / aggregator system, open three separate terminal windows
 
 ## Dashboard Snapshots
 
-1. Relevance-based Ranking
+**Relevance-based Ranking**
 
-<img src="./media/ui_sorted_by_relevance.png" alt="Dashboard - Relevance" width="400">
+<img src="./media/ui_sorted_by_relevance.png" alt="Dashboard - Relevance">
 
-2. Relevance x Recency-based Ranking. To compute the hybrid scoring, we use an exponential time decay. This is done only at the UI level, and the DB does not store or frequently update the scoring.
+**Relevance x Recency-based Ranking** :
 
-<img src="./media/ui_sorted_by_relevancexrecency.png" alt="Dashboard - Relevance x Recency" width="400">
+To compute the hybrid scoring, we use an exponential time decay. This is done only at the UI level (Not at the API or DB level), and the DB does not store or frequently update the scoring.
+
+<img src="./media/ui_sorted_by_relevancexrecency.png" alt="Dashboard - Relevance x Recency">
