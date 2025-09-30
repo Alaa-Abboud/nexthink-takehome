@@ -4,7 +4,7 @@
 
 I started with reading the assignment pdf a couple of times, highlighting key requirements and aspects. After whcih, I decide to draw up the high-level (and simplified) design / architecture of our system. This diagram acts as the main guide to our development process.
 
-<img src="../media/system_diagram.png" alt="System Diagram" width="400">
+<img src="../media/system_diagram.png" alt="System Diagram">
 
 ### Crawlers & Manager
 
