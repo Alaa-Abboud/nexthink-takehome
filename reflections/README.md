@@ -136,8 +136,8 @@ The tests are present at `src/tests/`.
 - RSS scraping capped per site with default limits  
 - Subreddit handling for comments is incomplete  
 - Zero-shot labels are not fully optimized 
+- Since raw events that were filtered out are not stored in the DB, the system will still run ML inference on said events if they were fetched again. This constitues an unnecessary consumption of resources and should be accounted for. 
 
-### Bonus Question
 
 
 

@@ -30,7 +30,9 @@ src/
 ├── routers/
     ├── endpoints.py                  # Endpoints
 ├── scheduler/
-    ├── simple_scheduler.py           # Scheduler to regularly fetch news, filter, and store them       
+    ├── simple_scheduler.py           # Scheduler to regularly fetch news, filter, and store them. Polling interval is set at 60      
+                                      # seconds in config. Please increase if ML inference is too slow on your test pc.
+
 ├── tests/                            # Contains relevant test scripts for different modules
 └── config.py                         # Contains config parameters used across the project
 
