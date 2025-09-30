@@ -62,7 +62,7 @@ Given the above, I settled on two possible options:
    - A ModernBERT-base model finetuned on NLI tasks but also allows for zero-shot classification on any given set of labels. It is only 150M parameters and thus quite CPU-friendly.
    - Limitation: Calibration properties are not known, and its small size can mean lower performance on OOD-tasks such as IT-critical classification. 
 
-Given the assumption (notably that calibration holds),  `ModernBERT-base-mnli` was selected in a `zero-shot` setup with labels `[IT-Critical, Not-IT-Critical]`. Emphasis should be put on the *Critical* qualifier, as it helps exclude generic IT-related but non-critical updates (e.g., routine product releases).
+Given the assumption (notably that calibration holds),  `ModernBERT-base-mnli` was selected in a `zero-shot` setup with labels `[IT-Critical, Not-IT-Critical]`. Emphasis should be put on the *Critical* qualifier, as it helps exclude generic IT-related but non-critical updates (e.g., routine product releases). Note that more specific labels might help our system perform better.
 
 > Please Note that model selection should be based on systematic evaluation on domain-related and custom benchmarks. This step was skipped in the above selection process; decision were based on assumptions and high-level reasoning given the scope of the assignment.
 
@@ -130,15 +130,13 @@ The tests are present at `src/tests/`.
 
 ### Limitations
 
-- No automatic refresh in the UI  
-- Recency decay applied only at the UI level  
-- Model calibration assumptions may affect scoring  
-- RSS scraping capped per site with default limits  
-- Subreddit handling for comments is incomplete  
-- Zero-shot labels are not fully optimized 
+- No automatic refresh in the UI. 
+- Recency decay applied only at the UI level.
+- Model calibration assumptions may affect scoring. 
+- RSS scraping capped per site with default limits. 
+- Subreddit handling for comments is incomplete. 
+- Zero-shot labels are not fully optimized.
 - Since raw events that were filtered out are not stored in the DB, the system will still run ML inference on said events if they were fetched again. This constitues an unnecessary consumption of resources and should be accounted for. 
-
-
 
 
 
