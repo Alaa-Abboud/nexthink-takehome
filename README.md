@@ -34,7 +34,7 @@ src/
                                       # seconds in config. Please increase if ML inference is too slow on your test pc.
 
 ├── tests/                            # Contains relevant test scripts for different modules
-└── config.py                         # Contains config parameters used across the project
+└── config.py                         # Contains config parameters used across the project (e.g. item limit per crawler)
 
 ui/
 └── simple_dashboard.py               # Streamlit-based UI
@@ -108,7 +108,7 @@ To run the web crawler / aggregator system, open three separate terminal windows
    ```
    python src\routers\endpoints.py
    ```
-2. Run the Scehduler (responsive for crawling and aggregating website at regular polling intervals)
+2. Run the Scehduler (responsible for crawling and aggregating website at regular polling intervals)
    ```
    python src\scheduler\simple_scheduler.py
    ```
@@ -116,6 +116,8 @@ To run the web crawler / aggregator system, open three separate terminal windows
    ```
    streamlit run ui\dashboard_simplified.py
    ```
+
+> Note: We currently limit each crawler to 25 items per crawl. Feel free to change the configs in `src/config.py` along other parameters.
 
 ## Dashboard Snapshots
 
