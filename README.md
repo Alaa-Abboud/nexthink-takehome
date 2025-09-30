@@ -6,7 +6,7 @@
 
 ## Refelctions
 
-Written refelctions, thought-process, and decision-making for each component of out system is present at `reflections/README.md`
+Written refelctions, thought-process, and decision-making for each component of the system is present at `reflections/README.md`
 
 ## Project Structure
 
